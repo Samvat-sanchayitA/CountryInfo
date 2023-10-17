@@ -1,15 +1,7 @@
 package com.samvat.countryinfo.data
 
-import android.app.Application
-import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.asLiveData
 import androidx.room.withTransaction
-import com.samvat.countryinfo.database.CountryDAO
 import com.samvat.countryinfo.database.CountryRoomDatabase
-import com.samvat.countryinfo.model.Country
-import com.samvat.countryinfo.network.CountriesApi
 import com.samvat.countryinfo.network.CountriesApiService
 import com.samvat.countryinfo.utils.networkBoundResource
 import kotlinx.coroutines.delay

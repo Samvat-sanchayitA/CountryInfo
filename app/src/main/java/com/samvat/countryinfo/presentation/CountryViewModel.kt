@@ -1,22 +1,14 @@
 package com.samvat.countryinfo.presentation
 
-import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
-import androidx.lifecycle.viewModelScope
 import com.samvat.countryinfo.data.CountryRepository
-import com.samvat.countryinfo.model.Country
-import com.samvat.countryinfo.utils.Constants.CountriesApiStatus
-import com.samvat.countryinfo.utils.Resource
-import kotlinx.coroutines.launch
 
-class CountryViewModel(private val repository: CountryRepository) :
+class CountryViewModel(repository: CountryRepository) :
     ViewModel() {
 
-     val countries = repository.getCountries().asLiveData()
+    val countries = repository.getCountries().asLiveData()
 
     class Factory(private val repository: CountryRepository) :
         ViewModelProvider.Factory {

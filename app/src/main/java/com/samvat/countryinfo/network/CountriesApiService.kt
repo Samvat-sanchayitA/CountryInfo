@@ -16,7 +16,7 @@ interface CountriesApiService {
 
 object CountriesApi {
 
-    fun getCountryApiService(context: Context) : CountriesApiService{
+    fun getCountryApiService(context: Context): CountriesApiService {
         val cache = provideCache(context)
         val okHttpClient = provideOkHttpClient(context, cache)
         val retrofit = Retrofit.Builder()

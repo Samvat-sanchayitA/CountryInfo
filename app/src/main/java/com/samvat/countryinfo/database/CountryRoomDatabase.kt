@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.samvat.countryinfo.model.Country
 
-@Database(entities = [Country::class], version = 1 ,  exportSchema = false)
+@Database(entities = [Country::class], version = 1, exportSchema = false)
 abstract class CountryRoomDatabase : RoomDatabase() {
     abstract fun countryDao(): CountryDAO
 
